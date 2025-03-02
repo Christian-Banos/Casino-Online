@@ -1,5 +1,9 @@
 @import url("variables.css");
 @import url("global.css");
+@import url("mobile-layout.css");
+@import url("desktop-layout.css");
+@import url("tablet-layout.css");
+@import url("modal.css");
 
 /* ===== Header and Nav ===== */
 /* .header {
@@ -11,83 +15,8 @@
   z-index: var(--z-fixed);
 } */
 
-/* --- Base Styles (mobile-first) --- */
-
-/* === Dark mode ===*/
-body {
-  background-color: white;
-  color: black;
-}
-
-/* Styles dark mode */
-body.dark-mode {
-  background-color: #121212;
-  color: white;
-}
-
-/* styles icons*/
-#moonIcon,
-#sunIcon {
-  font-size: 24px;
-  cursor: pointer;
-}
-.ri-sun-fill {
-  color: rgb(214, 214, 18);
-}
 
 
 
 
-/* Estilos para el botón */
-.language-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  /* Estilo para el icono dentro del botón (la imagen) */
-  .language-icon {
-    width: 20px;   /* Ajusta el tamaño de la bandera o imagen */
-    height: auto;
-    margin-right: 10px;  /* Espaciado entre la imagen y el texto */
-  }
-  
-  /* Estilo para el nombre del idioma */
-  .language-name {
-    font-weight: bold;
-  }
-  
-  /* Estilos para el menú de idiomas (inicialmente oculto) */
-  .language-menu {
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .language-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .language-menu li {
-    padding: 8px;
-  }
-  
-  .language-menu li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .language-menu li:hover {
-    background-color: #f4f4f4;
-  }
-  
+

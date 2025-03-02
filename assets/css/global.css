@@ -47,13 +47,13 @@ svg {
 }
 
 .button-icon {
-    background: transparent;   /* Fondo transparente */
-    border: none;              /* Elimina el borde */              /* Color del icono */
-    cursor: pointer;          /* Cambiar el cursor al pasar sobre el botón */
-    padding: 10px;             /* Espaciado interno */
-    border-radius: 50%;        /* Bordes redondeados */
-    display: inline-flex;      /* Asegura que el icono esté centrado */
-    justify-content: center;   /* Centra el icono horizontalmente */
-    align-items: center;       /* Centra el icono verticalmente */
+    background: transparent;   
+    border: none;                           
+    cursor: pointer;          
+    padding: 10px;             
+    border-radius: 50%;        
+    display: inline-flex;      
+    justify-content: center;   
+    align-items: center;      
   }
 

@@ -1,0 +1,90 @@
+/* Estilos del Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-fixed);
+}
+
+.modal-content {
+  background: var(--title-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--body-color);
+  width: 400px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: var(--font-height-bold);
+}
+
+.background-logo{
+    padding: 1rem;
+    background-image: url(../images/image_2_casino.jpeg);
+    max-height: 10rem;
+    min-width: 23rem;
+    margin: 10px auto;
+}
+.background-logo img{
+    max-width: 8rem;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* General Styles */
+
+.modal-h2{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body-font);
+}
+
+.h2-welcome-modal{
+    font-size: var(--biggest-font-size);
+    font-weight: var(--font-semi-bold);
+    font-family: var(--body-font);
+}
+
+.modal-button{
+    display: inline-block;
+    width: 18rem;
+    margin: 2rem;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--title-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+

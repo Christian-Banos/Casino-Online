@@ -1,0 +1,244 @@
+/* Estilos responsive para desktop */
+@media (min-width: 1024px) {
+  /* === Header ===*/
+  .header {
+    min-height: 8rem;
+  }
+  /* Logo */
+  .nav_logo img {
+    height: 10rem;
+    transition: all 1s ease;
+    min-width: 8rem;
+    min-height: 8rem;
+  }
+  .nav_logo img:hover {
+    filter: brightness(1.5);
+  }
+  /* Icons */
+  .nav_icons {
+    gap: 15px;
+  }
+  .button-icon {
+    font-size: 24px;
+  }
+  /* Icon Dark Mode */
+  .ri-moon-fill {
+    transition: all 1s ease;
+  }
+  .ri-moon-fill:hover {
+    opacity: 0.5;
+  }
+  .ri-sun-fill {
+    opacity: 0.5;
+  }
+  .ri-sun-fill:hover {
+    opacity: 1;
+  }
+  /* Lenguages Icons */
+  .nav-lenguage img {
+    width: 34px;
+    height: 34px;
+    transition: all 1s ease;
+  }
+  .nav-lenguage img:hover {
+    scale: 1.2;
+    filter: brightness(1.5);
+  }
+  .nav-lenguage__ingles img {
+    min-width: 40px;
+    height: 30px;
+  }
+  /* User Icon */
+  .button-icon__user {
+    width: 60px;
+    height: 60px;
+    transition: all 1s ease;
+  }
+  .button-icon__user:hover {
+    border-radius: 2%;
+    scale: 1.2;
+    filter: brightness(1.3);
+  }
+  /* nav-options */
+  .nav-options {
+    display: flex;
+    justify-content: center;
+    min-width: 40rem;
+  }
+  .nav-options ul {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    min-width: 100%;
+    color: var(--title-color);
+    font-size: var(--big-font-size);
+    font-family: var(--body-font);
+  }
+  .nav-options ul li {
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .nav-options ul li:hover {
+    color: var(--secondary-color);
+  }
+
+  /* === CAROUSEL SECTION */
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+  }
+  .carousel-content {
+    top: 60%;
+  }
+  .carousel-content-modify {
+    top: 60%;
+  }
+  .carousel-content h2 {
+    font-size: 5rem;
+  }
+  .carousel-content p {
+    font-size: 2rem;
+  }
+  .carousel-content a {
+    margin-top: 2rem;
+  }
+  .carousel-content a:hover {
+    scale: 1.2;
+    opacity: 0.9;
+  }
+
+  .carousel-buttons button {
+    margin: 150px 10px 0px 10px;
+    transition: all 1s ease;
+    opacity: 0.6;
+  }
+  .carousel-buttons button:hover {
+    opacity: 1;
+  }
+  .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .indicator.active {
+    opacity: 1;
+  }
+
+  /* === Register Section === */
+  .registration-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .registration-content {
+    max-width: 25rem;
+    margin: 0 100px;
+  }
+  .registration-content h3 {
+    font-size: var(--biggest-font-size);
+  }
+  .registration-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .registration-button {
+    cursor: pointer;
+  }
+  .registration-button:hover {
+    scale: 1.2;
+    opacity: 0.8;
+  }
+
+  /* === MAIN SECTION === */
+
+  .game-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .game-wrapper {
+    min-width: 38rem;
+    min-height: 20rem;
+    margin: 0;
+    transition: 1s all ease;
+  }
+  .game-wrapper:hover {
+    filter: brightness(0.8);
+  }
+  .game-wrapper-wolf {
+    grid-row-start: 2;
+  }
+  .game-wrapper-darts {
+    grid-row-start: 2;
+  }
+  .main-layout {
+    background-color: red;
+  }
+  .game-wrapper-olimpus > img {
+    width: 10rem;
+    height: auto;
+  }
+  /* Logo wrapper */
+  .game-ui img {
+    cursor: pointer;
+    transition: all 1s ease;
+    min-width: 28rem;
+  }
+  .game-ui img:hover {
+    scale: 1.2;
+    margin-bottom: 2rem;
+    filter: brightness(1.5);
+  }
+  .game-wrapper-olimpus .game-ui img {
+    min-width: 28rem;
+    height: auto;
+  }
+  .game-ui a:hover {
+    background-color: var(--hover-color);
+    scale: 1.1;
+  }
+  .game-wrapper-sweet .game-ui img {
+    margin-bottom: 3.5rem;
+  }
+  /* main layout */
+  .main-layout h3 {
+    font-size: var(--biggest-font-size);
+  }
+  .main-layout a:hover {
+    background-color: var(--hover-color);
+    scale: 1.1;
+  }
+
+  /* === FOOTER === */
+  .footer {
+    min-height: 15rem;
+  }
+  .footer-container {
+    min-width: 100%;
+    padding: 2rem;
+    padding-right: 10rem;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 10px;
+    color: var(--title-color); 
+    font-weight: var(--font-medium);
+    font-size: 14px;
+  }
+  
+}

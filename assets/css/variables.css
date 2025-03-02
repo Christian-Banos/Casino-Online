@@ -4,38 +4,40 @@
     /* ===== Colors =====*/
     --hue: 284;
     --first-color: hsl(var(--hue), 96%, 11%);
-    --secondary-color: hsl(288, 91%, 43%);
+    --secondary-color: hsl(45, 60%, 61%);
+    --hover-color: hsl(45, 78%, 46%);
     --title-color: hsl(228, 8%, 95%);
     --text-color: hsl(228, 8%, 65%);
     /* --text-color-light: hsl(var(--hue), 8%, 65%); */
-    --body-color: hsl(284, 96%, 11%);
+    --body-color: hsl(0, 0%, 0%);
     /* --container-color-alt: hsl(var(--hue), 16%, 97%); */
   
     /* ===== Font and typography =====*/
     --body-font: "Poppins", sans-serif;
     --biggest-font-size: 3rem;
     --bigger-font-size: 2.25rem;
-    --big-font-size: 1.5rem;
-    --normal-font-size: 0.938rem;
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
+    --h1-font-size: 1.9rem;
+    --h2-font-size: 1.8rem;
+    --h3-font-size: 1.2rem;
   
     /* ===== Font weight ===== */
     --font-regular: 400;
     --font-medium: 500;
     --font-semi-bold: 600;
+    --font-height-bold: 800;
   
     /* ===== z index ===== */
     --z-tooltip: 10;
     --z-fixed: 100;
   
     /* ==== Responsive typography ==== */
-    @media screen and (min-width: 1152px) {
+    @media screen and (min-width: 1024px) {
       :root {
-        --biggest-font-size: 4rem;
+        --biggest-font-size: 5rem;
         --bigger-font-size: 2rem;
         --normal-font-size: 1rem;
         --h1-font-size: 2.25rem;

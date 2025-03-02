@@ -1,0 +1,14 @@
+/* Estilos responsive para tablets */
+@media (min-width: 768px) {
+    /*=== HEADER === */
+    .nav_logo img {
+      height: 50px;
+    }
+    .button-icon {
+      font-size: 22px;
+    }
+    .nav-lenguage img {
+      width: 28px;
+      height: 28px;
+    }
+  }
