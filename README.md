@@ -12,34 +12,36 @@
 
   CSS3 - Styling and responsive design
 
-## JavaScript (Vanilla/Framework) - Interactivity and dynamic features
+  JavaScript (Vanilla/Framework) - Interactivity and dynamic features
 
+##
 # 📂 Project Structure
 
-# 📁 project-name/
-# ├── 📁 assets/         # Images, icons, and other static resources
-# ├── 📁 css/            # CSS stylesheets
-# ├── 📁 js/             # JavaScript files
-# ├── 📁 pages/          # Additional pages (e.g., contact, services, etc.)
-# ├── 📄 index.html      # Main page
-# ├── 📄 README.md       # Project documentation
-# └── 📄 .gitignore      # Files ignored by Git
+📁 project-name/
+├── 📁 assets/         # Images, icons, and other static resources
+├── 📁 css/            # CSS stylesheets
+├── 📁 js/             # JavaScript files
+├── 📁 pages/          # Additional pages (e.g., contact, services, etc.)
+├── 📄 index.html      # Main page
+├── 📄 README.md       # Project documentation
+└── 📄 .gitignore      # Files ignored by Git
 
+##
 ## 🎨 Main Features
 
-# ✅ Responsive design adaptable to tablet devices.
-# ✅ Optimized loading of images and resources.
-# ✅ Simple and intuitive navigation.
-# ✅ Modify the login to make it more professional and efficient.
+✅ Responsive design adaptable to tablet devices.
+✅ Optimized loading of images and resources.
+✅ Simple and intuitive navigation.
+✅ Modify the login to make it more professional and efficient.
 
-## 📦 Installation and Usage
+##
+📦 Installation and Usage
 
-# Clone the repository
+Clone the repository
 
-## git clone https://github.com/Christian-Banos/Casino-Online.git
-## cd project-name
+# git clone https://github.com/Christian-Banos/Casino-Online.git
 
-
+##
 # 📄 License
 
-## This project is under the MIT license. You can use and modify it freely.
+This project is under the MIT license. You can use and modify it freely.
