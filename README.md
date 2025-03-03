@@ -8,9 +8,9 @@
 
 # 🚀 Technologies Used
 
-## HTML5 - Website structure
+  HTML5 - Website structure
 
-## CSS3 - Styling and responsive design
+  CSS3 - Styling and responsive design
 
 ## JavaScript (Vanilla/Framework) - Interactivity and dynamic features
 
