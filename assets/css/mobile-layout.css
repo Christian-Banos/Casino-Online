@@ -8,6 +8,7 @@ body.dark-mode {
   background-color: var(--body-color);
   color: white;
 }
+
 /* nav-options */
 
 /* styles icons*/
@@ -222,6 +223,34 @@ body.dark-mode {
 .registration-image img {
   max-width: 9rem;
 }
+/* dark mode MOdal */
+.dark-mode .modal-content{
+  background-color: transparent; /* Negro con transparencia */
+  backdrop-filter: blur(10px); /* Efecto difuminado */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  color: var(--title-color); /* Mantiene el color de los textos */
+}
+.dark-mode .modal-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Más transparencia */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -1; /* Se coloca detrás del contenido */
+  border-radius: 10px;
+}
+.dark-mode .modal-button{
+  background-color: rgb(38, 36, 36);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--title-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dark-mode .modal-button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Aumenta la opacidad al pasar el cursor */
+  border-color: rgba(255, 255, 255, 0.8);
+}
 
 /* === MAIN SECTION === */
 
@@ -407,43 +436,38 @@ body.dark-mode {
   padding: 20px 20px 0px 20px;
   margin-top: 1rem;
 }
-
 .footer-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
-
 .footer h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 1rem;
 }
-
 .footer ul {
   list-style: none;
   padding: 0;
 }
-
 .footer ul li {
   margin-bottom: 5px;
 }
-
 .footer a {
   text-decoration: none;
   color: var(--title-color);
   opacity: 0.8;
   transition: opacity 0.3s;
 }
-
 .footer a:hover {
   opacity: 1;
 }
-
-/* Sección de métodos de pago */
+/* payments methods */
 .footer-payment{
   display: flex;
   flex-direction: column;
@@ -460,11 +484,16 @@ body.dark-mode {
   min-width: 3rem;
   margin: 1px;
 }
-
-/* Estilos del logo */
+/* Logo style */
 .footer-logo {
   text-align: center;
   margin-top: 20px;
   display: none;
+}
+.copyright-section{
+  padding: 0.5rem;
+  min-width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 

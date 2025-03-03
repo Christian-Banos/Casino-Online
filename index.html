@@ -28,9 +28,9 @@
         /></a>
         <div class="nav-options">
           <ul>
-            <li><a href=""></a>Casino</a></li>
-            <li><a href=""></a>Casino Online</a></li>
-            <li><a href=""></a>Play Online</a></li>
+            <li data-translate="casino">casino<a href="#" ></a></a></li>
+            <li data-translate="casinoOnline"><a href="#"></a>casino online</a></li>
+            <li data-translate="playOnline"><a href="#"></a>Play Now</a></li>
           </ul>
         </div>
         <div class="nav_icons">
@@ -47,11 +47,11 @@
           </button>
           <!-- Buttons Lenguages -->
           <div class="button-lenguages">
-            <button class="nav-lenguage button-icon" id="nav-lenguage">
+            <button class="nav-lenguage button-icon porgues"  id="nav-lenguage">
               <img src="assets/icons/portugues_icon.png" alt="Porgugal Icon" />
             </button>
             <button
-              class="nav-lenguage nav-lenguage__ingles button-icon"
+              class="nav-lenguage nav-lenguage__ingles button-icon english"
               id="nav-lenguage"
             >
               <img
@@ -77,8 +77,8 @@
           />
           <div class="carousel-content">
             <h2>Leon211</h2>
-            <p>We're here to play</p>
-            <a href="#">Play Now</a>
+            <p data-translate="joinNow">We're here to play</p>
+            <a href="#" data-translate="playNow">Play Now</a>
           </div>
         </div>
         <div class="carousel-slide">
@@ -87,8 +87,8 @@
             alt="Poker Game Casino Online"
           />
           <div class="carousel-content carousel-content-modify">
-            <h2>More than 4.500 games choose from!</h2>
-            <a href="#">Join Now</a>
+            <h2 data-translate="moreGames">More than 4.500 games choose from!</h2>
+            <a href="#" data-translate="joinNow">Join Now</a>
           </div>
         </div>
         <div class="carousel-slide">
@@ -97,8 +97,8 @@
             alt="Poker Game Casino Online"
           />
           <div class="carousel-content">
-            <h2>Get a 100% bonus up to 750€</h2>
-            <a href="#">Explore</a>
+            <h2 data-translate="bonus">Get a 100% bonus up to 750€</h2>
+            <a href="#" data-translate="explore">Explore</a>
           </div>
         </div>
       </div>
@@ -113,8 +113,8 @@
     <!-- === Register Section -->
     <section class="registration-section">
       <div class="registration-content">
-        <h3 class="registration-title">Register for free here</h3>
-        <button class="registration-button" onclick="openModal()">
+        <h3 class="registration-title" data-translate="registerFree">Register for free here</h3>
+        <button class="registration-button" data-translate="register" onclick="openModal()">
           REGISTER
         </button>
       </div>
@@ -132,27 +132,29 @@
           <div class="background-logo">
             <img src="assets/images/legon_logo.png" alt="" />
           </div>
-          <h2 class="modal-h2">CREATE YOUR ACOUNT</h2>
+          <h2 class="modal-h2" data-translate="createAccount">CREATE YOUR ACOUNT</h2>
           <input
             type="email"
             id="email"
             placeholder="Enter your email"
+            data-translate="mail"
             required
           />
           <input
             type="password"
             id="password"
             placeholder="Enter your password"
+            data-translate="password"
             required
           />
-          <button onclick="nextStep(2)" class="modal-button">Continue</button>
+          <button onclick="nextStep(2)" class="modal-button" data-translate="continue">Continue</button>
         </div>
 
         <div class="step step-2">
           <div class="background-logo">
             <img src="assets/images/legon_logo.png" alt="" />
           </div>
-          <h2 class="modal-h2"> DEPOSIT</h2>
+          <h2 class="modal-h2" data-translate="deposit"> DEPOSIT</h2>
           <select id="payment-method">
             <option value="paypal">PayPal</option>
             <option value="visa">Visa</option>
@@ -162,18 +164,19 @@
             type="number"
             id="amount"
             placeholder="Enter amount"
+            data-translate="amount"
             required
           />
-          <button onclick="nextStep(3)" class="modal-button">Continue</button>
+          <button onclick="nextStep(3)" class="modal-button" data-translate="continue">Continue</button>
         </div>
 
         <div class="step step-3">
           <div class="background-logo">
             <img src="assets/images/legon_logo.png" alt="" />
           </div>
-          <h2 class="modal-h2 h2-welcome-modal">WELCOME!</h2>
-          <p>Your account has been successfully created.</p>
-          <button onclick="closeModal()" class="modal-button">Start Playing</button>
+          <h2 class="modal-h2 h2-welcome-modal" data-translate="welcome">WELCOME!</h2>
+          <p data-translate="accountCreated">Your account has been successfully created.</p>
+          <button onclick="closeModal()" class="modal-button" data-translate="startPlaying">Start Playing</button>
         </div>
       </div>
     </div>
@@ -195,7 +198,7 @@
               src="assets/images/logo_juego_01.png"
               alt="Logo Game Gates of Olimpus"
             />
-            <a href="#">PLAY HERE</a>
+            <a href="#" data-translate="playHere">PLAY HERE</a>
           </div>
         </div>
 
@@ -205,7 +208,7 @@
               src="assets/images/logo_juego_02.png"
               alt="sweet bonanza 1000"
             />
-            <a href="#">PLAY HERE</a>
+            <a href="#" data-translate="playHere">PLAY HERE</a>
           </div>
         </div>
 
@@ -219,21 +222,21 @@
               src="assets/images/Logo_juego_03.png"
               alt="Logo Wolf Gold Ultimate"
             />
-            <a href="#">PLAY HERE</a>
+            <a href="#" data-translate="playHere">PLAY HERE</a>
           </div>
         </div>
 
         <div class="game-wrapper game-wrapper-darts">
           <div class="game-ui">
             <img src="assets/images/logo_darts.png" alt="Darts Game" />
-            <a href="#">PLAY HERE</a>
+            <a href="#" data-translate="playHere">PLAY HERE</a>
           </div>
         </div>
       </div>
 
       <dev class="main-layout">
-        <h3>Join our poker entertainment</h3>
-        <a href="#">PLAY HERE</a>
+        <h3 data-translate="joinPoker">Join our poker entertainment</h3>
+        <a href="#" data-translate="playHere">PLAY HERE</a>
       </dev>
     </section>
 
@@ -242,28 +245,28 @@
       <div class="footer-container">
         <!-- Information Section -->
         <div class="footer-info">
-          <h3>ABOUT LEON211</h3>
+          <h3 data-translate="aboutLeon">ABOUT LEON211</h3>
           <ul>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Responsible Gaming</a></li>
+            <li><a href="#" data-translate="terms">Terms & Conditions</a></li>
+            <li><a href="#" data-translate="privacy">Privacy Policy</a></li>
+            <li><a href="#" data-translate="responsibleGaming">Responsible Gaming</a></li>
           </ul>
-          <p>18+ Only | Play Responsibly</p>
+          <p data-translate="only18">18+ Only | Play Responsibly</p>
         </div>
 
         <!-- Navigation Links -->
         <div class="footer-nav">
-          <h3>Navigation Links</h3>
+          <h3 data-translate="navLinks">Navigation Links</h3>
           <ul>
-            <li>🏠 <a href="#">Home</a></li>
-            <li>🎮 <a href="#">Games</a></li>
-            <li>💰 <a href="#">Promotions</a></li>
-            <li>📞 <a href="#">Contact Us</a></li>
+            <li>🏠 <a href="#" data-translate="home">Home</a></li>
+            <li>🎮 <a href="#" data-translate="games">Games</a></li>
+            <li>💰 <a href="#" data-translate="promotions">Promotions</a></li>
+            <li>📞 <a href="#" data-translate="contactUs">Contact Us</a></li>
           </ul>
         </div>
         <!-- Payment methods -->
         <div class="footer-payment">
-          <h3>Payment Methods</h3>
+          <h3 data-translate="">Payment Methods</h3>
           <div class="payment-icons">
             <img
               src="assets/icons/amex_logo-removebg-preview.png"

@@ -1,5 +1,5 @@
 /* Estilos responsive para desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px){
   /* === Header ===*/
   .header {
     min-height: 8rem;
@@ -142,10 +142,8 @@
     justify-content: center;
     align-items: center;
     height: 50vh;
-  }
-  .registration-content {
-    max-width: 25rem;
-    margin: 0 100px;
+    max-width: 80rem;
+    margin: 0 auto;
   }
   .registration-content h3 {
     font-size: var(--biggest-font-size);
@@ -154,12 +152,18 @@
     max-width: 100%;
     height: auto;
   }
+  .modal-button,
   .registration-button {
     cursor: pointer;
+    transition: all 1s ease;
+  }
+  .modal-button:hover {
+    scale: 1.1;
+    background-color: var(--hover-color);
   }
   .registration-button:hover {
-    scale: 1.2;
-    opacity: 0.8;
+    scale: 1.1;
+    background-color: var(--hover-color);
   }
 
   /* === MAIN SECTION === */
@@ -236,9 +240,8 @@
   .copyright-section {
     text-align: center;
     padding: 10px;
-    color: var(--title-color); 
+    color: var(--title-color);
     font-weight: var(--font-medium);
     font-size: 14px;
   }
-  
 }
