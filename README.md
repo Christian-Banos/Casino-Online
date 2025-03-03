@@ -1,20 +1,22 @@
-📌 Project: Website Name
+# 📌 Project: Leon211
 
-📖 Description
+# 📖 Description
 
-This project is a website developed using HTML, CSS, and JavaScript. Its purpose is [brief description of the website's goal, e.g., "promoting a business," "showcasing a portfolio," "allowing online bookings," etc.].
+This project is a website developed using HTML, CSS, and JavaScript. Its purpose is The purpose is to apply for a job offer by creating this website.
 
-🚀 Technologies Used
+![Mobile Views](assets/images/proyecto_phone.png)
+![Desktop Views](assets/images/proyecto_desktop.png)
 
-HTML5 - Website structure
+# 🚀 Technologies Used
 
-CSS3 - Styling and responsive design
+  HTML5 - Website structure
 
-JavaScript (Vanilla/Framework) - Interactivity and dynamic features
+  CSS3 - Styling and responsive design
 
-[Additional frameworks or libraries] (if applicable)
+  JavaScript (Vanilla/Framework) - Interactivity and dynamic features
 
-📂 Project Structure
+
+# 📂 Project Structure
 
 # 📁 project-name/
 # ├── 📁 assets/         # Images, icons, and other static resources
@@ -25,31 +27,15 @@ JavaScript (Vanilla/Framework) - Interactivity and dynamic features
 # ├── 📄 README.md       # Project documentation
 # └── 📄 .gitignore      # Files ignored by Git
 
-🎨 Main Features
+# 🎨 Main Features
 
-✅ Responsive design adaptable to mobile devices.
-✅ Optimized loading of images and resources.
-✅ Simple and intuitive navigation.
-✅ [Any other relevant feature of the site].
+  ✅ Responsive design adaptable to tablet devices.
+  ✅ Optimized loading of images and resources.
+  ✅ Simple and intuitive navigation.
+  ✅ Updating the login page.
 
-## 📦 Installation and Usage
 
-1️⃣ Clone the repository
-
-git clone https://github.com/user/repository.git
-cd project-name
-
-2️⃣ Open in the browser
-
-Simply open index.html in your preferred browser.
-
-3️⃣ Local server (optional)
-
-If you want to use a local server for development:
-
-npx live-server
-
-🌍 Deployment and Hosting
+# 🌍 Deployment and Hosting
 
 This project can be deployed on platforms like:
 
@@ -57,18 +43,12 @@ GitHub Pages: https://user.github.io/project
 
 Netlify / Vercel / Firebase Hosting
 
-👨‍💻 Contribution
 
-Fork the repository.
-
-Create a new branch: git checkout -b new-feature
-
-Make changes and commit: git commit -m "Added new functionality"
-
-Push the changes: git push origin new-feature
-
-Open a Pull Request on GitHub.
-
-📄 License
+# 📄 License
 
 This project is under the MIT license. You can use and modify it freely.
+
+# Links Page
+  - Git Hub: https://github.com/Christian-Banos/Casino-Online.git
+  - Figma: https://www.figma.com/design/rN4TGzUaHAZnWDAs53fyxB/Casino-online?node-id=0-1&m=dev&t=EVyi6DBtMkrGzKlc-1
+  - Trello: https://trello.com/invite/b/67c19c8aed574243939691ae/ATTIc78b30858b6c3b3177ab314815f19f3f6344DE84/casino-on-line
