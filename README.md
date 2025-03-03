@@ -49,6 +49,7 @@ Netlify / Vercel / Firebase Hosting
 This project is under the MIT license. You can use and modify it freely.
 
 # Links Page
+  - Git Page: https://christian-banos.github.io/Casino-Online/
   - Git Hub: https://github.com/Christian-Banos/Casino-Online.git
   - Figma: https://www.figma.com/design/rN4TGzUaHAZnWDAs53fyxB/Casino-online?node-id=0-1&m=dev&t=EVyi6DBtMkrGzKlc-1
   - Trello: https://trello.com/invite/b/67c19c8aed574243939691ae/ATTIc78b30858b6c3b3177ab314815f19f3f6344DE84/casino-on-line
