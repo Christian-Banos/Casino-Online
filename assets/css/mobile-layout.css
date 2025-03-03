@@ -1,0 +1,500 @@
+/* === Dark mode ===*/
+body {
+  background-color: white;
+  color: black;
+}
+/* Styles dark mode */
+body.dark-mode {
+  background-color: var(--body-color);
+  color: white;
+}
+
+/* nav-options */
+
+/* styles icons*/
+#moonIcon,
+#sunIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.ri-sun-fill {
+  color: var(--secondary-color);
+}
+
+/*=== HEADER === */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  background-color: var(--first-color); /* Fondo oscuro */
+  z-index: var(--z-fixed);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1480px;
+  margin: 0 auto;
+}
+.blur-header {
+  background-color: transparent;
+}
+
+.blur-header::after {
+  content: "";
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(289, 58%, 36%, 0.187);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari  */
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Logo  */
+.nav_logo img {
+  height: 5rem;
+}
+/* Icons */
+.nav_icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icons styles */
+.button-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--title-color);
+}
+/* Img Lenguages */
+.nav-lenguage img {
+  width: 25px;
+  height: 25px;
+}
+.nav-lenguage__ingles img {
+  width: 40px;
+  height: 22px;
+}
+.button-lenguages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* User icon */
+.button-icon__user {
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.button-icon__user i {
+  font-size: 25px;
+  color: var(--body-color);
+}
+/* nav-options */
+.nav-options{
+  display: none;
+}
+
+/* === CAROUSEL === */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-slide {
+  min-width: 100%;
+  position: relative;
+  min-height: 20rem;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: brightness(0.9);
+}
+.carousel-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--title-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+.carousel-content h2 {
+  margin-bottom: 10px;
+  font-size: var(--bigger-font-size);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  min-width: 20rem;
+}
+.carousel-content a {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  transition: all 1s ease;
+}
+.carousel-content p {
+  font-size: var(--h3-font-size);
+  font-family: var(--body-font);
+  margin-bottom: 1rem;
+  min-width: 15rem;
+}
+.carousel-content-modify {
+  top: 65%;
+}
+.carousel-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.carousel-buttons button {
+  background: var(--first-color);
+  color: var(--secondary-color);
+  opacity: 0.8;
+  border: none;
+  padding: 10px;
+  margin-top: 100px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+/* === Register Section === */
+.registration-section {
+  display: flex;
+  align-items: center;
+}
+.registration-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+}
+.registration-content h3 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+  margin: 1rem;
+  min-width: 100%;
+  font-family: var(--body-font);
+}
+.registration-image {
+  padding: 0.8rem;
+}
+.registration-button {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 1s ease;
+}
+
+.registration-image img {
+  max-width: 9rem;
+}
+/* dark mode MOdal */
+.dark-mode .modal-content{
+  background-color: transparent; /* Negro con transparencia */
+  backdrop-filter: blur(10px); /* Efecto difuminado */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  color: var(--title-color); /* Mantiene el color de los textos */
+}
+.dark-mode .modal-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Más transparencia */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  z-index: -1; /* Se coloca detrás del contenido */
+  border-radius: 10px;
+}
+.dark-mode .modal-button{
+  background-color: rgb(38, 36, 36);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--title-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.dark-mode .modal-button:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Aumenta la opacidad al pasar el cursor */
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* === MAIN SECTION === */
+
+.game-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 95%;
+  margin-bottom: 1px;
+  border-radius: 5px;
+  padding-top: 0.4rem;
+  background-color: var(--body-color);
+  min-height: auto;
+  margin: 0 auto;
+}
+.game-wrapper{
+  width: 25rem;
+  position: relative;
+  max-height: 15rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(55, 54, 54, 0.2); 
+}
+.game-wrapper-olimpus {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 12rem;
+  background-image: url(../images/background_juego1.png);
+  background-size: contain;
+  padding: 20px;
+}
+/* Olympus Image */
+.game-wrapper-olimpus > img {
+  width: 5rem; 
+  height: auto;
+}
+.game-wrapper-sweet{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 12rem;
+  background-image: url(../images/Background_juego_02.png);
+  background-size: cover;
+  padding: 20px;
+  margin-top: 0.8rem;
+}
+.game-wrapper-wolf{
+  background-image: url(../images/Background_juego_03.png);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 12rem;
+  background-size: cover;
+  padding: 20px;
+  margin-top: 0.8rem;
+}
+.game-wrapper-wolf > img{
+  max-width: 44%;
+}
+.game-wrapper-darts{
+  background-image: url(../images/download\ \(3\).jpeg);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 12rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  margin-top: 0.8rem;
+}
+/* Logo and button */
+.game-ui {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game-wrapper-sweet .game-ui{
+  max-width: 15rem;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.game-wrapper-wolf .game-ui{
+  max-width: 15rem;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.game-wrapper-darts .game-ui{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 100%; 
+  text-align: center;
+}
+/* Logo */
+.game-ui img {
+  min-width: 18rem;
+  height: auto;
+  margin-bottom: 5px;
+}
+.game-wrapper-sweet .game-ui img{
+  min-width: 10rem;
+  height: 7rem;
+  margin-bottom: 5px;
+}
+.game-wrapper-wolf .game-ui img{
+  min-width: 5rem;
+  height: 7rem;
+  margin-bottom: 5px;
+}
+.game-wrapper-darts .game-ui img{
+  min-width: 80px; 
+  height: 120px;
+  margin-top: -35px; 
+}
+/* Button */
+.game-ui a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--title-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  transition: 1s all ease;
+} 
+/* mainlayout */
+.main-layout {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  background-image: url("../images/A\ Comprehensive\ Handbook\ on\ the\ Different\ Varieties\ of\ Online\ Slot\ Games.jpeg");
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  color: white; 
+  padding: 20px;
+}
+/* Aditionals Styles*/
+.main-layout h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.main-layout a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+  transition: 1s all ease;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: var(--body-color);
+  color: var(--title-color);
+  padding: 20px 20px 0px 20px;
+  margin-top: 1rem;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.footer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 1rem;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 5px;
+}
+.footer a {
+  text-decoration: none;
+  color: var(--title-color);
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.footer a:hover {
+  opacity: 1;
+}
+/* payments methods */
+.footer-payment{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-bottom: 4rem;
+}
+.footer-payment .payment-icons {
+  display: flex;
+  max-width: 11rem;
+  gap: 1rem;
+}
+
+.payment-icons img {
+  min-width: 3rem;
+  margin: 1px;
+}
+/* Logo style */
+.footer-logo {
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+.copyright-section{
+  padding: 0.5rem;
+  min-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+

@@ -1,2 +1,22 @@
-@import url('_variables.css');
-@import url('_global.css');
+@import url("variables.css");
+@import url("global.css");
+@import url("mobile-layout.css");
+@import url("desktop-layout.css");
+@import url("tablet-layout.css");
+@import url("modal.css");
+
+/* ===== Header and Nav ===== */
+/* .header {
+  position: fixed;
+  width: 100%;
+  background-color: var(--container-color);
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+} */
+
+
+
+
+
+
