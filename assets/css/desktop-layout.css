@@ -233,15 +233,20 @@
     min-height: 15rem;
   }
   .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     min-width: 100%;
     padding: 2rem;
     padding-right: 10rem;
   }
+
   .copyright-section {
     text-align: center;
     padding: 10px;
     color: var(--title-color);
     font-weight: var(--font-medium);
     font-size: 14px;
+
   }
 }

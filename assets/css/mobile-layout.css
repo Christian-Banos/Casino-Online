@@ -97,6 +97,7 @@ body.dark-mode {
 }
 .button-icon__user i {
   font-size: 25px;
+  color: var(--body-color);
 }
 /* nav-options */
 .nav-options{

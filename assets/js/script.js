@@ -108,6 +108,8 @@ const translations = {
     explore: "Explore",
     registerFree: "Register for free here",
     register: "REGISTER",
+    moreGames: "More than 4.500 games choose from!",
+    bonus: "Get a 100% bonus up to 750€",
     createAccount: "CREATE YOUR ACCOUNT",
     deposit: "DEPOSIT",
     welcome: "WELCOME!",
